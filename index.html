@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form id="currencyConverter">
+        <label for="amount">Введите сумму: </label>
+        <div class="number">
+            <input type="number" id="amount" placeholder="Введите сумму" oninput="convertCurrency()" required>
+
+            <select id="currency" onchange="convertCurrency()">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="kzt">KZT</option>
+            </select>
+        </div>
+
+        <p id="result" class="result"></p>
+    </form>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
